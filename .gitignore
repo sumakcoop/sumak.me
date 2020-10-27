@@ -9,6 +9,8 @@
 /public/bundles/
 /var/
 /vendor/
+/bin/
+/tests/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
