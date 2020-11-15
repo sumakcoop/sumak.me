@@ -1,60 +1,35 @@
-Symfony Demo Application
+Sumak.me
 ========================
 
-The "Symfony Demo Application" is a reference application created to show how
-to develop applications following the [Symfony Best Practices][1].
+Sumak.me is a marketplace application, developed by the Sumak Foundation, at Córdoba, Spain.
+it's intended to be a collaborative marketplace for helping local producer to sell their products in the web.
+the application is stronlgy focused in free software, federation, and integration with other kind of applications, as e-commerce (Woocommerce, Prestashop...), erp (Tryton, Dolibarr...), etc.
 
-Requirements
-------------
+# Documentation
 
-  * PHP 7.2.9 or higher;
-  * PDO-SQLite PHP extension enabled;
-  * and the [usual Symfony application requirements][2].
+about installing
 
-Installation
-------------
++ [setting up](/docs/en/setting_up.md)
++ [deployment](/docs/en/deployment.md)
 
-[Download Symfony][4] to install the `symfony` binary on your computer and run
-this command:
+# Copyright
+Copyright (C) 2020 Asociación SUMAK <info(at)sumak(dot)me>
 
-```bash
-$ symfony new --demo my_project
+# License
+```
+Sumak.me is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+Sumak.me is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with Sumak.me.  If not, see <http://www.gnu.org/licenses/>.
 ```
 
-Alternatively, you can use Composer:
 
-```bash
-$ composer create-project symfony/symfony-demo my_project
-```
 
-Usage
------
-
-There's no need to configure anything to run the application. If you have
-[installed Symfony][4] binary, run this command:
-
-```bash
-$ cd my_project/
-$ symfony serve
-```
-
-Then access the application in your browser at the given URL (<https://localhost:8000> by default).
-
-If you don't have the Symfony binary installed, run `php -S localhost:8000 -t public/`
-to use the built-in PHP web server or [configure a web server][3] like Nginx or
-Apache to run the application.
-
-Tests
------
-
-Execute this command to run tests:
-
-```bash
-$ cd my_project/
-$ ./bin/phpunit
-```
-
-[1]: https://symfony.com/doc/current/best_practices.html
-[2]: https://symfony.com/doc/current/reference/requirements.html
-[3]: https://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
-[4]: https://symfony.com/download
