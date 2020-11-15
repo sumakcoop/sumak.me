@@ -1,9 +1,9 @@
 Sumak.me
 ========================
 
-Sumak.me is a marketplace application, developed by the Sumak Foundation, at Córdoba, Spain.
-it's intended to be a collaborative marketplace for helping local producer to sell their products in the web.
-the application is stronlgy focused in free software, federation, and integration with other kind of applications, as e-commerce (Woocommerce, Prestashop...), erp (Tryton, Dolibarr...), etc.
+Sumak.me is a marketplace application, developed by the Sumak Foundation, at Córdoba, Spain.<br/>
+It's intended to be a collaborative marketplace for helping local producer to sell their products in the web.<br/>
+The application is stronlgy focused in free software, federation, and integration with other kind of applications, as e-commerce (Woocommerce, Prestashop...), erp (Tryton, Dolibarr...), etc.
 
 # Documentation
 
