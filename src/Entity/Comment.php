@@ -23,7 +23,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="symfony_demo_comment")
+ * @ORM\Table(name="sumak_comment")
  *
  * Defines the properties of the Comment entity to represent the blog comments.
  * See https://symfony.com/doc/current/doctrine.html#creating-an-entity-class
