@@ -1,6 +1,6 @@
 <?php
 // This file is part of Sumak.me
-// Copyright (C) 2020 Asociación SUMAK <info (at) sumakcoop (dot) org
+// Copyright (C) 2020,2021 Asociación SUMAK <info (at) sumakcoop (dot) org
 // 
 // Sumak.me is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Affero General Public License as
