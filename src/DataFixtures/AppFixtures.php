@@ -47,14 +47,14 @@ class AppFixtures extends Fixture
 
     private function loadUsers(ObjectManager $manager): void
     {
-        foreach ($this->getUserData() as [$fullname, $username, $password, $email, $roles]) {
+        foreach ($this->getUserData() as [$fullname, $username, $password, $email, $roles, $createdAt]) {
             $user = new User();
             $user->setFullName($fullname);
             $user->setUsername($username);
             $user->setPassword($this->passwordEncoder->encodePassword($user, $password));
             $user->setEmail($email);
             $user->setRoles($roles);
-
+            $user->setCreatedAt($createdAt);
             $manager->persist($user);
             $this->addReference($username, $user);
         }
@@ -106,9 +106,9 @@ class AppFixtures extends Fixture
     {
         return [
             // $userData = [$fullname, $username, $password, $email, $roles];
-            ['Jane Doe', 'jane_admin', 'kitten', 'jane_admin@symfony.com', ['ROLE_ADMIN']],
-            ['Tom Doe', 'tom_admin', 'kitten', 'tom_admin@symfony.com', ['ROLE_ADMIN']],
-            ['John Doe', 'john_user', 'kitten', 'john_user@symfony.com', ['ROLE_USER']],
+            ['Jane Doe', 'jane_admin', 'kitten', 'jane_admin@symfony.com', ['ROLE_ADMIN'], new \DateTime('now')],
+            ['Tom Doe', 'tom_admin', 'kitten', 'tom_admin@symfony.com', ['ROLE_ADMIN'], new \DateTime('now')],
+            ['John Doe', 'john_user', 'kitten', 'john_user@symfony.com', ['ROLE_USER'], new \DateTime('now')],
         ];
     }
 
