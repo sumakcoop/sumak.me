@@ -84,6 +84,13 @@ class User implements UserInterface, \Serializable
      */
     private $roles = [];
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created_at", type="datetime", nullable=false)
+     */
+    private $createdAt;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -147,6 +154,16 @@ class User implements UserInterface, \Serializable
     public function setRoles(array $roles): void
     {
         $this->roles = $roles;
+    }
+
+    public function getCreatedAt(): \DateTime
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTime $createdAt): void
+    {
+        $this->createdAt = $createdAt;
     }
 
     /**
